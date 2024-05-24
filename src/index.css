@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+#root {
+  font-family: "Google Sans", sans-serif;
+
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  > header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: rgb(205, 92, 92);
+    color: white;
+    align-items: center;
+  }
+
+  & button {
+    background-color: rgb(219, 112, 147);
+    color: white;
+    height: 36px;
+    padding-inline: 18px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    min-width: 96px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: rgb(218, 112, 214);
+    }
+
+    &:disabled {
+      background-color: #44b4;
+      cursor: not-allowed;
+    }
+  }
+  & .card {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      display: flex;
+      padding: 8px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+.candidates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    }
+ 
+.candidate-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(205, 92, 92);
+  color: #fff;
+}
+    
+.candidate-card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+    
+.candidate-card section {
+  margin-top: 10px;
+}
+    
+.candidate-number {
+  position: absolute;
+  top: -10px; 
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: rgb(	240, 128, 128); 
+  color: #fff;
+ border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.candidate-card h2 {
+  margin: 0;
+  margin-bottom: 10px; 
+}
+    
+.candidate-card h5 {
+  text-align: right;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+    
